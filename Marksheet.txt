@@ -1,0 +1,114 @@
+import java.util.Scanner;
+public class Marksheet
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] str = {"Java    ", "Python  ", "C++     ", ".Net    ", "Ruby    ", "DBMS    ", "P-Java  ", "P-Python"};
+        int n = str.length;
+        int[] mr = new int[n];
+        String[] atkt ;
+        int atktc;
+        String[] atktr = new String[n];
+        int u;
+        int total=0;
+        do {
+            atktc=0;
+            atkt = new String[n];
+        for (u = 0; u < n - 2; ) {
+            System.out.print("Enter marks in " + str[u] + " : ");
+            mr[u] = sc.nextInt();
+            if (mr[u] >= 0 && mr[u] <= 50) {
+                if (mr[u] <= 17) {
+                    atkt[u] = "ATKT";
+                    atktr[atktc++] = str[u];
+                } else
+                    atkt[u] = " ";
+                u++;
+            }
+        }
+        for (int i = 6; i < n; ) {
+            System.out.print("Enter marks in " + str[i] + " : ");
+            mr[i] = sc.nextInt();
+            if (mr[i] >= 0 && mr[i] <= 25) {
+                if (mr[i] < 9) {
+                    atkt[i] = "ATKT";
+                    atktr[atktc++] = str[i];
+                } else
+                    atkt[i] = " ";
+                i++;
+            }
+        }
+        System.out.println("-------------------------------------------------------------------");
+        System.out.println("\t\t\t\tDEVI AHILYA UNIVERSITY");
+        System.out.println("\t\t\t\t\tStatement of marks");
+        System.out.println("-------------------------------------------------------------------");
+        System.out.println("Roll number : 0608cs181024\n Name : Mausam Lodhi\nRegular\nSemester : I");
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("Subjects\t\t\t\tMarks\t\t\t\tStatus");
+        System.out.println("--------------------------------------------------------------------");
+        for (int i = 0; i <n; i++) {
+            System.out.println(str[i] + "\t\t\t\t" + mr[i] + "/50" + "\t\t\t\t" + atkt[i]);
+            total += mr[i];
+        }
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("\t\t\t\t\tTotal : " + total + "/350");
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("ATKT wale Subjects ...");
+
+        for (int i = 0; i < atktc; i++)
+            System.out.println(atktr[i]);
+        System.out.println("-------------------------------------------------------------------");
+        if (atktc >= 3)
+            System.out.println("You have year back. First clear all the previous exams...");
+        else
+            System.out.println(" ");
+    }while(atktc>=3);
+        for (int i = 0; i < atktc; i++) {
+            for (int j = 0; j < n; j++) {
+                if (atktr[i].equals(str[j])) {
+                    System.out.print("Enter the marks of " + atktr[i] + " : ");
+                    mr[j] = sc.nextInt();
+                    if(mr[j]>=17)
+                        atkt[j]=" ";
+                    else
+                        atkt[j]="ATKT";
+                }
+            }
+        }
+
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("\t\t\t\t\tTotal : " + total + "/350");
+        System.out.println("--------------------------------------------------------------------");
+        if(atktc<=2)
+        {
+            System.out.println("ATKT wale Subjects ...");
+            for(int i=0;i<atktc;i++)
+                System.out.println(atktr[i]);
+            System.out.println("-------------------------------------------------------------------");
+            System.out.println("\t\t\t\tD.A.V.V.University");
+            System.out.println("-------------------------------------------------------------------");
+            System.out.println("Roll number : 0608cs181024\n Name : Mausam Lodhi\nRegular...\nSemester : I");
+            System.out.println("--------------------------------------------------------------------");
+            System.out.println("Subjects\t\t\t\tMarks\t\t\t\tStatus");
+            System.out.println("--------------------------------------------------------------------");
+            total = 0;
+            System.out.println(n+"----------------------------");
+            for (int i = 0; i<n; i++) {
+
+                System.out.println(str[i] + "\t\t\t\t" + mr[i] + "/50" + "\t\t\t\t" + atkt[i]);
+                total += mr[i];
+                if (mr[i]>= 0 &&mr[i]<=25) {
+                    if (mr[i] <= 8) {
+                        atkt[i] = "ATKT";
+                        atktr[atktc++] = str[i];
+                    } else
+                        atkt[i] = " ";
+                    
+                }
+            }
+        }
+        else
+            System.out.println("All clear...");
+        //***************************************************************************************
+    }
+}
