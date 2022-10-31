@@ -1,0 +1,814 @@
+Q1. Hollow square star pattern???
+class TestMain
+{
+  public static void main(String args[])
+    {
+      for(int i=0;i<=9;i++)
+     	{
+     	   for(int j=0;j<=9;j++)
+     	   {
+     	      if(j==i||j==9-i||i==0||i==9||j==0||j==9)
+     	        System.out.print("*");
+     	      else 
+     	         System.out.print(" ");
+     	    }
+     	  System.out.println();
+     	 }
+     }
+}
+***********************************************************************************			
+Q2 WAP to print Hollow Inverted Mirrored right triangle pattern star??
+class TestMain
+{
+  public static void main(String args[])
+    {
+      for(int i=0;i<=9;i++)
+     	{
+     	   for(int j=0;j<=9;j++)
+     	   {
+     	   	  if(i==j||j==9||i==0)
+     	   	    System.out.print("*");
+     	   	  else
+     	   	     System.out.print(" ");
+     	   }
+     	   System.out.println();
+        }
+     }
+}
+************************************************************************************
+Q3 WAP to print Hollow Inverted right triangle pattern star??
+class TestMain
+{
+  public static void main(String args[])
+    {
+      for(int i=0;i<=9;i++)
+     	{
+     	   for(int j=0;j<=9;j++)
+     	   {
+     	   	  if(j==9-i||j==0||i==0)
+     	   	    System.out.print("*");
+     	   	  else
+     	   	     System.out.print(" ");
+     	   }
+     	   System.out.println();
+        }
+     }
+}
+*************************************************************************************
+Q4 WAP to print Hollow Inverted mirrored right triangle pattern star??
+class TestMain
+{
+  public static void main(String args[])
+    {
+      for(int i=0;i<=9;i++)
+     	{
+     	   for(int j=0;j<=9;j++)
+     	   {
+     	   	  if(j==9-i||j==9||i==9)
+     	   	    System.out.print("*");
+     	   	  else
+     	   	     System.out.print(" ");
+     	   }
+     	   System.out.println();
+        }
+     }
+}
+*************************************************************************************
+Q5.WAP to print pyramid star pattern???
+class Test
+ {
+   public static void main(String args[])
+    {
+      for(int i=1;i<=9;i++)
+       {
+         for(int j=9;j>=i;j--)
+              System.out.print("  ");
+         for(int k=1;k<=i;k++)
+             System.out.print("  * ");
+        System.out.println();
+       }
+    }
+}
+********************************************************************************
+Q6.WAP to print inverted pyramid????
+class Test
+ {
+   public static void main(String args[])
+    {
+      for(int i=1;i<=9;i++)
+       {
+         for(int j=9;j>=9-i;j--)
+             System.out.print("  ");
+         for(int k=1;k<=9-i;k++)
+             System.out.print(" *  ");
+        System.out.println();
+       }
+    }
+}
+******************************************************************************
+Q7.WAP to print right arrow ???
+class MMM
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i<=10; i++)
+        {
+            for (int j = 1; j <= 5; j++)
+            {
+                if ((j>i-1)||(i+j>10))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+
+        }
+
+    }
+}
+*********************************************************************************
+Q8WAP to print mirrored rhombus star pattern??
+
+class Test{
+    public static void main(String[] args) {
+        for (int i = 1; i <=6; i++)
+        {
+            for(int j=1;j<=i-1;j++)
+                System.out.print("  ");
+            for(int k=1;k<=6;k++)
+                System.out.print("* ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q9.WAP to print Diamond star pattern????
+
+class Test{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=9; i++)
+        {
+            for(int j=9;j>=i+1;j--)
+                System.out.print("  ");
+            for(int k=1;k<=i;k++)
+                System.out.print("  * ");
+            System.out.println();
+        }
+         for (int i = 1; i <=8; i++)
+        {
+            for(int j=1;j<=i;j++)
+                System.out.print("  ");
+            for(int k=8;k>=i;k--)
+                System.out.print("  * ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q.10 WAP to print Diagonal star pattern????
+class Test
+{
+    public static void main(String[] args)
+    {
+      for (int i = 1; i <=9; i++)
+      {
+          for (int j = 1; j <= 9; j++)
+          {
+              if ((j == 1) || (i == 1) || (i == 9 )
+                      || (j == 9 || i == j) || i == 10 - j||j==5 ||i==5)
+                  System.out.print("* ");
+              else
+                  System.out.print("  ");
+          }
+          System.out.println();
+      }
+
+    }
+}
+*********************************************************************************
+Q11. WAP to print Hollow inverted Pyramid star pattern???
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=11; i++)
+         {
+            for(int j=1;j<=i;j++)
+                System.out.print(" ");
+            for(int k=11;k>=i;k--)
+                if(i==1||i==k||k==11)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q12. WAP to print Inverted right triangle star pattern????
+
+class Test
+{
+    public static void main(String args[])
+    {
+        for(int i=1;i<=8;i++)
+        {
+            for(int j=8;j>=i;j--)
+            {
+                System.out.print("*");
+                System.out.print(" ");
+
+            }
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q13.WAP to print Hollow rohmbus star pattern???
+class Test
+{
+    public static void main(String[] args) {
+        for (int i = 1; i <=6; i++)
+        {
+            for(int j=6;j>=i;j--)
+                System.out.print(" ");
+            for(int k=1;k<=6;k++)
+                if(k==1||k==6||i==1||i==6)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q14. WAP to print left arrow star pattern????
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <5; i++)
+        {
+            for(int k=6;k>=i;k--)
+                System.out.print(" *");
+            System.out.println();
+        }
+        for (int i = 1; i <=5; i++)
+        {
+            for(int k=1;k<=i;k++)
+                System.out.print(" *");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q15. WAP to print cross pattren???
+class Starcross{
+    public static void main(String[] args) {
+        for (int i = 1; i <=7; i++)
+        {
+            for(int j=1;j<=7;j++)
+                if(i==j||i+j==8)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q16. WAP to print Diamond star pattern????
+class Patpyr
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=9; i++)
+        {
+            for(int j=9;j>=i;j--)
+                System.out.print("  ");
+            for(int k=1;k<=i;k++)
+                System.out.print("*   ");
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q1 .
+class Test
+ {
+   public static void main(String args[])
+    {
+      for(int i=1;i<=5;i++)
+       {
+         for(int j=1;j<=i;j++)
+	   {
+	        System.out.print(j);
+          }
+        System.out.println();
+      }
+   }
+}
+*******************************************************************************
+Q2.
+class Test
+ {
+   public static void main(String args[])
+    {
+      for(int i=1;i<=5;i++)
+       {
+         for(int j=1;j<=6-i;j++)
+	   {
+	        System.out.print(j);
+          }
+        System.out.println();
+      }
+   }
+}
+**********************************************************************
+Q3.class Test
+ {
+   public static void main(String args[])
+    {
+      for(int i=1;i<=5;i++)
+       {
+         for(int j=1;j<=5;j++)
+	   {
+	     if(i==5||j==1||j==i)
+	        System.out.print(j);
+	     else
+	        System.out.print(" ");
+          }
+        System.out.println();
+      }
+   }
+}
+********************************************************************
+Q4.
+class Test
+ {
+   public static void main(String args[])
+    {
+     int i,j,k,s;
+      for(i=1;i<=5;i++)
+        {
+          for(j=5;j>i;j--)
+            System.out.print(" ");
+          for(k=i,s=1;s<=2*i-1;s++)
+           {
+              if(s<=i)
+               {
+                 System.out.print(k);
+                 k++;
+                 if(s==i)
+                   --k;
+               }
+               else
+                 {
+                   --k;
+                   System.out.print(k);
+                 }
+          }
+          System.out.println();
+       }
+    }
+}
+****************************************************************
+Q6.
+class Test
+ {
+   public static void main(String args[])
+    {
+     int i,j,k,s;
+      for(i=1;i<=5;i++)
+        {
+          for(j=i;j<=5;j++)
+          {
+            if(i==1||j==5||j==i)
+              System.out.print(j);
+            else
+              System.out.print(" ");
+          }
+          System.out.println();
+      }
+   }
+}
+***********************************************************************
+Q12.
+class Test{
+    public static void main (String[] args){
+        int i ,j;
+        for (i =1 ; i<=4 ; i++){
+            for (j=1;j<=2*i-1 ;j++){
+                if (j%2==0)
+                    System.out.print("*");
+                else if (j%2==1)
+                    System.out.print(i);
+
+                else
+                    System.out.print("  ");
+            }
+
+            System.out.println();
+        }
+        for (i=4 ;i>=1 ; i--){
+            for (j=1 ;j<=2*i-1 ;j++) {
+                if (j%2==0)
+                    System.out.print("*");
+                else if (j%2==1)
+                    System.out.print(i);
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+
+        }
+
+
+    }
+}
+********************************************************************
+Q13.
+class Test
+{
+    public static void main (String[] args)
+    {
+        int i ,j,k=1;
+        for (i =1 ; i<=4 ; i++)
+        {
+            for (j=1;j<=2*i-1 ;j++)
+            {
+                if (j%2==0)
+                    System.out.print("*");
+                else if (j%2==1)
+                {
+                    System.out.print(k);
+                    k++;
+                }
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+            }
+        for (i=4 ;i>=1 ; i--)
+        {
+            for (j=1 ;j<=2*i-1 ;j++)
+            {
+                if (j%2==0)
+                    System.out.print("*");
+                else if (j%2==1)
+                {
+                    System.out.print(k);
+                    k--;
+                }
+                else
+                  System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+******************************************************************
+Q7.
+
+
+public class Test
+{
+    public static void main(String[] args)
+    {
+
+        for (int i = 1; i <=5; i++)
+        {
+
+            for (int j = 1; j <= i; j++)
+            {
+                System.out.print(j + " ");
+            }
+            for (int k = i - 1; k >= 1; k--)
+            {
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+*****************************************************************
+Q8.
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 65; i <=69; i++)
+        {
+            for (int j = 65; j <= i; j++)
+            {
+                System.out.print((char)j + " ");
+            }
+            for (int k = i - 1; k >= 69; k--)
+            {
+                System.out.print((char)k + " ");
+            }
+                System.out.println();
+        }
+    }
+}
+*****************************************************************
+Q9.
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=5-i;j++)
+                System.out.print("  ");
+            for(int k=1;k<=i;k++)
+                System.out.print(" "+k);
+            for(int k=i-1;k>=1;k--)
+                System.out.print(" "+k);
+            System.out.println();
+        }
+    }
+}
+*****************************************************************
+Q17.
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=5; i++)
+        {
+            for (int j = 1; j <= 5; j++)
+            {
+                if (( i == j) || i == 6 - j)
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+**************************************************************
+Q17.
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=5; i++)
+        {
+            for (int j = 1; j <= 5; j++)
+            {
+                if ((i+j)%2==0)
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+*************************************************************
+Q13
+class Test
+{
+    public static void main(String[] args)
+    {
+      int num = 8,i, j , k, t1, t2,var = 1;
+         for (i = 0; i <4; i++)
+          {
+            for (j = 0; j <= i * 2; j++)
+              {
+                if (j % 2 == 0)
+                  {
+                   System.out.print(+var);
+                   var++;
+                  }
+                else
+                  System.out.print("*");
+              }
+                System.out.println();
+          }
+                var--;
+                j = (i - 1) * 2;
+                var = var - (i - 1);
+                k = (num / 2) - 1;
+                for (i = num / 2; i < num; i++)
+                {
+                    t1 = j;
+                    t2 = var;
+                    while (j >= 0)
+                    {
+                        if (j % 2 == 0)
+                        {
+                            System.out.print(+var);
+                            var++;
+                        } else
+                            System.out.print("*");
+                        j--;
+                    }
+                    System.out.println();
+                    j = t1 - 2;
+                    var = t2 - k;
+                    k--;
+                }
+        }
+  }
+  ********************************************************************
+  Q19
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=5; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                if (( i == j) || j == 1)
+                    System.out.print("1 ");
+                else
+                    System.out.print("2 ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+********************************************************************
+Q18.
+class Test
+{
+    public static void main(String[] args)
+    {
+        int j=1;
+        for (int i = 1; i <=8; i++)
+        {
+            for ( j = 1; j <= i; j++)
+            {
+                if (( i+j)%2==0)
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+    }
+}
+**********************************************************************
+Q15.
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=5; i++)
+        {
+            for (int j = 1; j <= 5; j++)
+            {
+                if (( i == j) || i == 6 - j||(j==3&&i%2!=0))
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+****************************************************************
+Q15.
+class Test
+{
+    public static void main(String[] args)
+    {
+        for (int i = 1; i <=5; i++)
+        {
+            for (int j = 1; j <= 5; j++)
+            {
+                if (( i == j) || j==6-i)
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+****************************************************************
+
+***************************************************************8
+Q16. 
+public class trick
+{
+    public static void main(String[] args)
+    {
+        int Row = 1, c = 1;
+        for (int i = 1; i <= 5; i++)
+        {
+            if (i % 2 == 0)
+            {
+                int reverse = Row + c - 1;
+                for (int j = 0; j < i; j++)
+                {
+                    System.out.print(reverse-- + " ");
+                    c++;
+                }
+            }
+            else
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    System.out.print(c + " ");
+                    c++;
+                }
+            }
+            System.out.println();
+            Row++;
+        }
+    }
+}
+*********************************************************************
+Q16.
+class Test
+{
+    public static void main(String[] args)
+    {
+       int n =2,k,primeCount=0;
+        for (int i = 1; i <=5; i++)
+        {
+            primeCount=0;
+           
+               while(true)
+               {
+                 k=2;
+                 while(k<=n/2)
+                 {
+                   if(n%k==0)
+                     break;
+                  k++;
+                }
+                if(k>n/2)
+                  {
+                    primeCount++;
+                    System.out.print(n+" ");
+                  }
+                 n++;
+                
+                 if(primeCount == i){
+                   System.out.println();
+                   break;
+                 }  
+                   
+               }     
+           
+        }
+
+    }
+}
+***********************************************************************
+Q10.
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=6;j>=i;j--)
+                System.out.print("*");
+            for(int k=1;k<=i+i;k++)
+            {
+                if(k%2==0)
+                    System.out.print("*");
+                else
+                    System.out.print(i);
+            }
+            for(int j=5;j>=i;j--)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
+***********************************************************************
+Q11.								
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=3;i<=6;i++)
+        {
+            for(int j=3;j<=i;j++)
+                System.out.print(i);
+            System.out.println();
+        }
+        for(int i=5;i>=3;i--)
+        {
+            for(int j=i;j>=3;j--)
+                System.out.print(i);
+            System.out.println();
+        }
+    }
+}
+**********************************************************************
+Q

@@ -1,0 +1,415 @@
+Q1 WAP to print A???
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=7;i++)
+        {
+            for(int j=1;j<=4;j++)
+            {
+                if(i==7/2+1||i==1||j==1||j==4)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+*************************************************
+Q2 WAP to print E???
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=7;i++)
+        {
+            for(int j=1;j<=5;j++)
+            {
+                if((i==7/2+1&&j<5)||i==1||i==7||j==1)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+******************************************************
+Q3.WAP to print B??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j,s;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=3;j++) 
+        if(j==1||(j==2&&i%2!=0)||(j==3&&i%2==0))
+        System.out.print("*");
+        else
+        System.out.print(" ");
+        System.out.println();
+        }
+      }
+ }
+******************************************************
+Q4. WAP to print C???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j,s;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      
+      if((j==1&&i>1&&i<5)||(i==1&&j>1)||(i==5&&j>1))
+      System.out.print("*");
+     
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+    }
+} 
+*****************************************************
+Q5. WAP to print D???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j,s;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      
+      if((j==1)||(j==2&&i==1)||(j==2&&i==5)||(j==3&&i>1&&i<5))
+      System.out.print("*");
+     
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+    }
+} 
+**************************************************
+Q6. WAP to print F???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      
+      
+      if(i==1||j==1||i==3)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+      }
+}
+      ****************************************************
+Q7. WAP to print G??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if((j==1&&i>1&&i<5)||(i==1&&j>1)||(i==5&&j>1)||(i==3&&j>2)||(i==4&&j>3))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+    }
+} 
+**************************************************
+Q8.WAP to print H????
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++) 
+      if(j==1||j==5||i==3)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+      }
+}
+************************************************
+Q9.WAp to print I??????
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++) 
+      if(i==1||i==5||j==3)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+      }
+}
+**********************************************
+Q10.WAP to print J???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++) 
+      if(i==1||i==5||j==3)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+      }
+}
+***********************************************
+Q11.WAp to print K???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      
+      if(j==1||j==3&&(i==2||i==4)||j==5&&(i==1||i==5)||(i==3&&j==2))
+      System.out.print("*");
+       else
+      System.out.print(" ");
+      System.out.println();
+      }
+    }
+} 
+************************************************
+Q12.WAP to print L???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(i==5||j==1)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+************************************************
+Q13.WAP TO PRINT M???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(j==5||j==1||(i==3&&j==3)||(i==2&&(j==2||j==4)))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+**************************************************
+Q14.WAP TO PRINT N???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(j==5||j==1||i==j)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+*************************************************
+Q15.WAP TO PRINT O??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=4;i++) {
+      for(j=1;j<=4;j++)
+      if(j==1&&(i>1&&i<4)||j==4&&(i>1&&i<4)||i==1&&(j>1&&j<4)||i==4&&(j>1&&j<4))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+*************************************************
+Q16.WAP TO PRINT P???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(j==1||(i==1&&j<4)||(i==3&&j<4)||(i==2&&j==4))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+**********************************************
+Q17.WAP TO PRINT Q???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=4;j++)
+      if(j==1&&(i>1&&i<4)||j==4&&(i>1&&i<4)||i==1&&(j>1&&j<4)||i==4&&(j>1&&j<4)||(i==5&&j==4))
+      System.out.print(" * ");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+***********************************************
+Q18.WAP TO PRINT R??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(j==1||(i==1&&j<4)||(i==3&&j<4)||(i==2&&j==4)||(i==4&&j==3)||(i==5&&j==4))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+**********************************************
+Q19.WAP TO PRINT S???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=6;i++) {
+      for(j=1;j<=4;j++)
+      if((i==1&&j>1&&j<4)||(i==6&&j>1&&j<4)||(i==2&&(j==1||j==4))||(i==5&&(j==1||j==4))||(i==3&&j==2)||(i==4&&j==3))
+      System.out.print(" * ");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+**********************************************
+Q20.WAP TO PRINT T???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(i==1||j==3)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+*********************************************
+Q21.WAP TO PRINT U??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if((j==1&&i<5)||(j==5&&i<5)||(i==5&&j>1&&j<5))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+**********************************************
+Q22.WAP TO PRINT V??
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(i==1&&(j==1||j==5)||i==3&&(j==2||j==4)||(i==5&&j==3))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+********************************************
+Q23.WAP TO PRINT W???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(j==1||j==5||(i==3&&j==3)||(i==4&&j>3&&j>3)||(i==4&&j<3&&j<3))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+******************************************
+Q24.WAP TO PRINT X??
+import java.util.Scanner;
+
+class Alpha {
+  public static void main(String args[]) {
+  Scanner sc=new Scanner(System.in);
+    int i,j;
+    System.out.println("Enter the number of rows");
+    int n=sc.nextInt();
+    for(i=1;i<=n;i++) {
+      for(j=1;j<=n;j++)
+      if(i==j||i==(n+1)-j)
+       System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+***********************************************
+Q25.WAP TO PRINT Y???
+class Alpha {
+  public static void main(String args[]) {
+    int i,j;
+    for(i=1;i<=5;i++) {
+      for(j=1;j<=5;j++)
+      if(i==1&&(j==1||j==5)||i==3&&(j==2||j==4)||(i==5&&j==3)||(j==3&&i>3&&i<5))
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+*************************************************
+Q26.WAP TO PRINT Z???
+import java.util.Scanner;
+class Alpha {
+  public static void main(String args[]) {
+   Scanner sc=new Scanner(System.in);
+ 
+    System.out.println("Enter the number of rows");
+    int n=sc.nextInt();
+    int i,j;
+    for(i=1;i<=n;i++) {
+      for(j=1;j<=n;j++)
+      if(i==1||i==n||i==(n+1)-j)
+      System.out.print("*");
+      else
+      System.out.print(" ");
+      System.out.println();
+      }
+     }
+}
+*************************************************      

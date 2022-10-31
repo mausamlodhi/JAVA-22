@@ -1,0 +1,582 @@
+Q.1 WAP to calculate Area of cicle?
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        float a,r;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a radius of circle : ");
+        r = sc.nextFloat();
+        a = 3.14f*r*r;
+        System.out.println("Area of circle : "+a);
+    }
+}
+-----------------------------------------
+Q.2 WAP to calculate area of rectangle???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        float a,w,l;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter width size of Rectangle : ");
+        w = sc.nextFloat();
+        System.out.print("Enter length size of Rectangle : ");
+        l = sc.nextFloat();
+        a = w*l;
+        System.out.println("Area of circle : "+a);
+    }
+}
+------------------------------------------
+Q.3 WAP to find out the area of cylinder????
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        float a,r,h;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Height of cylinder : ");
+        r = sc.nextFloat();
+        System.out.print("Enter radius of cylinder : ");
+        h = sc.nextFloat();
+        a = 2*3.14f*h*(r+h);
+        System.out.print("Area of cylinder : "+a);
+    }
+}
+------------------------------------------------------
+Q.4 WAP to find out the circummpherense of circle???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        float a,r;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a radius of circle : ");
+        r = sc.nextFloat();
+        a = 2*3.14f*r;
+        System.out.print("Circummpherense of circle : "+a);
+    }
+}
+-------------------------------------------------------
+Q 5. WAP to add two floating point numbers ???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        float a,b,c;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number : ");
+        a = sc.nextFloat();
+        System.out.print("Enter second number : ");
+        b = sc.nextFloat();
+        c = a+b;
+        System.out.print("Addition of two numbers : "+c);
+    }
+}
+----------------------------------------------------------
+Q 6.WAP to find out maximum number from three distinct numbers???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        int a,b,c,d;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number : ");
+        a = sc.nextInt();
+        System.out.print("Enter second number : ");
+        b = sc.nextInt();
+        System.out.print("Enter third number : ");
+        c = sc.nextInt();
+        d = a>b&&a>c?a:b>c?b:c;
+        System.out.println("First number = "+a);
+        System.out.println("Second number = "+b);
+        System.out.println("Third number = "+c);
+        System.out.print("Maximum number = "+d);
+    }
+}
+--------------------------------------------------------------------
+Q.7 WAP to find the given number is even or odd???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        int a;
+        String s;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to check it's even number or odd : ");
+        a = sc.nextInt();
+        s = a%2==0?"Even":"Odd";
+        System.out.println("Number that you entered = "+a);
+        System.out.println("The number is "+s+" number");
+    }
+}
+----------------------------------------------------------------------------
+Q.8 WAP to print student marksheet???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        int n1,n2,n3,n4,n5,t;
+        float p;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first subject marks : ");
+        n1 = sc.nextInt();
+        System.out.print("Enter second subject marks : ");
+        n2 = sc.nextInt();
+        System.out.print("Enter third subject marks : ");
+        n3 = sc.nextInt();
+        System.out.print("Enter fourth subject marks : ");
+        n4 = sc.nextInt();
+        System.out.print("Enter fifth subject marks : ");
+        n5 = sc.nextInt();
+        t = n1+n2+n3+n4+n5;
+        System.out.println("Marks in first subject = "+n1);
+        System.out.println("Marks in second subject = "+n2);
+        System.out.println("Marks in third subject = "+n3);
+        System.out.println("Marks in fourth subject = "+n4);
+        System.out.println("Marks in fifth subject = "+n5);
+        System.out.println("Total marks = "+t);
+        p = (t*100)/500;
+        System.out.print("Percentage = "+p);
+    }
+}
+---------------------------------------------------------------------------
+Q.9 WAP to find out the minimum number from the 5 distinct numbers???
+import java.util.Scanner;
+public class ITEP_Practice
+{
+    public static void main(String[] args)
+    {
+        int n1,n2,n3,n4,n5;
+        int min;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the first number : ");
+        n1 = sc.nextInt();
+        System.out.print("Enter the second number : ");
+        n2 = sc.nextInt();
+        System.out.print("Enter the third number : ");
+        n3 = sc.nextInt();
+        System.out.print("Enter the fourth number : ");
+        n4 = sc.nextInt();
+        System.out.print("Enter the fifth number : ");
+        n5 = sc.nextInt();
+        System.out.println("First number = "+n1);
+        System.out.println("Second number = "+n2);
+        System.out.println("Third number = "+n3);
+        System.out.println("Fourth number = "+n4);
+        System.out.println("Fifth number = "+n5);
+        min = n1<n2&&n1<n3&&n1<n4&&n1<n5?n1:n2<n3&&n2<n4&&n2<n5?n2:n3<n4&&n3<n5?n3:n4<n5?n4:n5;
+        System.out.println("Minimum number = "+min);
+    }
+}
+----------------------------------------------------------------------------------------
+Q10.Write a Java program to calculate profit or loss.
+
+
+import java.util.Scanner;
+public class PL
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n1, n2;
+        System.out.print("Enter Cost price : ");
+        n1 = sc.nextInt();
+        System.out.print("Enter selling price : ");
+        n2 = sc.nextInt();
+        System.out.println(" cost price  = "+n1);
+        System.out.println(" selling price = "+n2);
+        if(n1>n2)
+            System.out.println("Loss : "+ (n1-n2));
+        else if (n1<n2)
+            System.out.println( "Profit : "+(n2-n1));
+        else
+            System.out.println( "No Profit No Loss");
+
+    }
+}
+-----------------------------------------------------------------------------
+Q11. Write a Java program to count total number of notes in given amount.
+import java.util.Scanner ;
+class Notes{
+    public static void main (String[] args){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter amount");
+        int a = sc.nextInt();
+        int n2000,n500,n200,n100,n50,n20,n10,n5,n2,n1;
+        n2000 = a / 2000;
+        a = a % 2000;
+        n500 = a/500;
+        a = a % 500;
+        n200 = a/200;
+        a = a % 200;
+        n100 = a/100;
+        a = a % 100;
+        n50 = a/50;
+        a = a % 50;
+        n20 = a/20;
+        a = a % 20;
+        n10 = a/10;
+        a = a % 10;
+        n5 = a/5;
+        a = a % 5;
+        n2 = a/2;
+        a = a % 2;
+        n1 = a ;
+        int total = n2000+n500+n200+n100+n50+n20+n10+n5+n2+n1;
+        System.out.println(total);
+    }
+}
+-------------------------------------------------------------------------------
+Q12.Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: For first 50 units Rs. 0.50/unit For next 100 units Rs. 0.75/unit For next 100 units Rs. 1.20/unit For unit above 250 Rs. 1.50/unit An additional surcharge of 20% is added to the bill. 
+
+import java.util.Scanner;
+class Elect
+  {
+    public static void main (String[] args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter unit consumed");
+        double unit = sc.nextDouble();
+        double amount;
+        if (unit<50)
+        {
+            amount = unit*0.50;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >50 && unit<150)
+        {
+            amount = 25 + (unit-50)*0.75 ;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >150 && unit < 250 )
+        {
+            amount = 100 + (unit - 150 )*1.20;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >250)
+        {
+            amount = 220 + (unit - 250 )* 1.50;
+            System.out.println(amount*1.2f);
+        }
+        else {
+            System.out.println("default value ");
+        }
+    }
+}
+-----------------------------------------------------------------------------------
+Q13.Write a Java program to check whether a number is divisible by 5 and 11 or not. 
+import java.util.Scanner ;
+class Dev5
+  {
+    public static void main (String[] args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter a  number ");
+        int num = sc.nextInt ();
+        if (num%55==0)
+        {
+            System.out.println("Number is divisible by 5 and 11");
+        }
+        else
+        {
+            System.out.println("number is not divisible ");
+        }
+    }
+}
+Q14.W.A.P to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit. For given problem you have to take choice from user. If user enter choice ‘c’ or ‘C’ then convert Fahrenheit to Celsius. If user enter choice ‘f’ or ‘F’ then convert Celsius to Fahrenheit. 
+//WAP to convert temperature Celsius to Fahrenheit???
+import java.util.Scanner;
+public class CtoF
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        char ch;
+        int n1;
+        float t;
+        System.out.print("Enter the temperature : ");
+        n1=sc.nextInt();
+        System.out.print("Convert temperature into celsius or Fahrenheit [input c or f]: ");
+        ch = sc.next().charAt(0);
+        if(ch=='c'||ch=='C')
+        {
+            t = (n1-32)/1.8f;
+            System.out.println("temperature in Celsius = "+t);
+        }
+        else if(ch=='f'||ch=='F')
+        {
+            t =1.8f*n1+32;
+            System.out.println("Tempreature in Fahrenheit = "+t);
+        }
+        else
+            System.out.println("You entered an incorrect value");
+    }
+
+}
+---------------------------------------------------------------------------------------------
+Q15.W.A.P to check whether given number is even or odd Without using % operator. 
+
+import java.util.Scanner;
+class EvenSwitch
+{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the integer number: ");
+        int num=sc.nextInt();
+        switch(num%2)
+        {
+            case 0 :
+                System.out.println(num+" is a Even number");
+                break;
+            case -1 :
+            case 1 :
+                System.out.println(num+" is a Odd number");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------
+Q16. Print number between 1 to 5 in word format 
+//Print number between 1 to 5 in word format???
+import java.util.Scanner;
+public class One
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.print("Enter a number (1 to 5) : ");
+        n=sc.nextInt();
+        switch(n)
+        {
+            case 1 :
+                System.out.println("One");
+                break;
+            case 2 :
+                System.out.println("Two");
+                break;
+            case 3 :
+                System.out.println("Three");
+                break;
+            case 4 :
+                System.out.println("Four");
+                break;
+            case 5 :
+                System.out.println("Five");
+                break;
+            default :
+                System.out.println("Please enter the number between 0-5 ");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+17.WAP to check given year is a leap year or not 
+import java.util.Scanner;
+public class Leap {
+    public static void main(String args[])
+    {
+        int year;
+        System.out.println("Enter a Year : ");
+        Scanner sc = new Scanner(System.in);
+        year = sc.nextInt();
+        if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+            System.out.println("Given year is a leap year");
+        else
+            System.out.println("Given year is not a leap year");
+    }
+}
+----------------------------------------------------------------------------------------------
+Q18.Write a Java program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.          Calculate percentage and grade according to following: 
+	Percentage >= 90% : Grade A 
+	Percentage >= 80% : Grade B 
+	Percentage >= 70% : Grade C 
+	Percentage >= 60% : Grade D 
+	Percentage >= 40% : Grade E 
+	Percentage < 40% : Grade F
+//WAP to calculate the percentage
+import java.util.Scanner;
+public class Grade
+{
+    public static void main(String[] args)
+    {
+        int n1,n2,n3,n4,n5,t;
+        float p;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first subject marks : ");
+        n1 = sc.nextInt();
+        System.out.print("Enter second subject marks : ");
+        n2 = sc.nextInt();
+        System.out.print("Enter third subject marks : ");
+        n3 = sc.nextInt();
+        System.out.print("Enter fourth subject marks : ");
+        n4 = sc.nextInt();
+        System.out.print("Enter fifth subject marks : ");
+        n5 = sc.nextInt();
+        t = n1+n2+n3+n4+n5;
+        System.out.println("Marks in Physics subject = "+n1);
+        System.out.println("Marks in Chemistry subject = "+n2);
+        System.out.println("Marks in Biology subject = "+n3);
+        System.out.println("Marks in Mathematics subject = "+n4);
+        System.out.println("Marks in Computer subject = "+n5);
+        System.out.println("Total marks = "+t);
+        p = (t*100)/500f;
+        System.out.print("Percentage = "+p);
+
+        if ( p>= 90)
+            System.out.println("You got grade = A ");
+
+        else if ( p>= 80)
+            System.out.println("You got grade = B ");
+
+        else if ( p>= 70)
+            System.out.println("You got grade = C ");
+
+        else if ( p>= 60)
+            System.out.println("You got grade = D ");
+
+        else if (p>=40)
+            System.out.println("You got grade = E ");
+
+        else
+            System.out.println("You got grade = F ");
+
+
+    }
+}
+--------------------------------------------------------------------------
+Q20.Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: For first 50 units Rs. 0.50/unit For next 100 units Rs. 0.75/unit For next 100 units Rs. 1.20/unit For unit above 250 Rs. 1.50/unit An additional surcharge of 20% is added to the bill. 
+//Electricity bill
+import java.util.Scanner;
+class Elect
+  {
+    public static void main (String[] args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter unit consumed");
+        double unit = sc.nextDouble();
+        double amount;
+        if (unit<50)
+        {
+            amount = unit*0.50;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >50 && unit<150)
+        {
+            amount = 25 + (unit-50)*0.75 ;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >150 && unit < 250 )
+        {
+            amount = 100 + (unit - 150 )*1.20;
+            System.out.println("amount is "+amount*1.2f);
+        }
+        else if (unit >250)
+        {
+            amount = 220 + (unit - 250 )* 1.50;
+            System.out.println(amount*1.2f);
+        }
+        else {
+            System.out.println("default value ");
+        }
+    }
+}
+-------------------------------------------------------------------------------------------
+Q21.W.A.P to check whether given number is even or odd Without using % operator. 
+//WAP to perform arithmetic operation using switch case
+import java.util.Scanner;
+public class Arith
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        char n;
+        int a,b;
+        double c;
+        System.out.print("Enter first number : ");
+        a =sc.nextInt();
+        System.out.print("Enter second number : ");
+        b =sc.nextInt();
+        System.out.println("First number = "+a);
+        System.out.println("Second number = "+b);
+        System.out.print("Enter a arithmetic operator to perform task (+,-,/,*,%) : ");
+        n=sc.next().charAt(0);
+        switch(n)
+        {
+            case '+':
+                c = a+b;
+                System.out.println("Addition = "+c);
+                break;
+            case '-' :
+                c = a-b;
+                System.out.println("Subtrantion = "+c);
+                break;
+            case '*' :
+                c = a*b;
+                System.out.println("Multiplication = "+c);
+                break;
+            case '/' :
+                c = a/b;
+                System.out.println("Division = "+c);
+                break;
+            case '%' :
+                c = a%b;
+                System.out.println("Modulas = "+c);
+                break;
+            default:
+                System.out.println("Please enter from the given options ");
+        }
+    }
+}
+-------------------------------------------------------------------------------------------
+Q24.WAP to check wheater number is positive or negative
+// WAP to check whether number is positive or negative???
+import java.util.Scanner;
+public class PstvNgtv
+{
+    public static void main(String[] args)
+    {
+        int num;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        num = sc.nextInt();
+        if(num>0)
+        {
+            System.out.println("The number is positive.");
+        }
+        else if(num<0)
+        {
+            System.out.println("The number is negative.");
+        }
+        else
+        {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+----------------------------------------------------------------------------
+Q25. WAP to check wheather number is even or odd
+//Even odd
+import java.util.Scanner;
+public class EvenOdd
+{
+    public static void main(String args[])
+      {
+        int a;
+        String s;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to check it's even number or odd : ");
+        a = sc.nextInt();
+        s = a%2==0?"Even":"Odd";
+        System.out.println("Number that you entered = "+a);
+        System.out.println("The number is "+s+" number");
+      }
+}
+

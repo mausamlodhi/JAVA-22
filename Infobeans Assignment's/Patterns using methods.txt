@@ -1,0 +1,526 @@
+Q1. WAP to print Square Star pattern???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+        for(int i=0;i<r;i++)
+        {
+            for(int j=0;j<7;j++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+****************************************************************************
+Q2.WAP to print Hollow Square Star pattern with Diagonal???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+        for(int i=0;i<=r;i++)
+        {
+            for(int j=0;j<=r;j++)
+            {
+                if(i==0||i==r||j==0||j==r||i==j||j==r-i)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+****************************************************************************************************
+Q3.WAP to print Rhombus Star Pattern???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++) {
+           for (int i = 0; i <= r - j; i++) {
+               System.out.print(" ");
+           }
+           for(int k=0;k<=r;k++)
+               System.out.print("* ");
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+****************************************************************************
+Q4.WAP to print Mirrored Rhombus Star Pattern???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++) {
+           for (int i =0; i<j; i++) {
+               System.out.print(" ");
+           }
+           for(int k=0;k<=r;k++)
+               System.out.print("* ");
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+
+**********************************************************************
+Q5.WAP to print Right Triangle Star????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++) {
+           for (int i =0; i<j; i++) {
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+*******************************************************************************
+Q6.WP to print mirrored Right Triangle?????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++) {
+           for (int i =0; i<r-j; i++)
+               System.out.print(" ");
+           for(int k=0;k<j;k++)
+               System.out.print("*");
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+******************************************************************************
+Q7.WAP to print Hollow inverted mirrored Right tirangle star pattern???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++)
+       {
+          for(int i=0;i<=r;i++)
+          {
+              if(j==0||i==r||i==j)
+                  System.out.print("*");
+              else
+                  System.out.print(" ");
+          }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+
+*******************************************************************************
+Q8.WAP to print Hollow Right Star pattern??
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++)
+       {
+          for(int i=0;i<=r;i++)
+          {
+              if(j==r||i==0||i==j)
+                  System.out.print("*");
+              else
+                  System.out.print(" ");
+          }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+**********************************************************************************
+Q9.WAP to print Hollow mirrored right triangle Star pattern????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++)
+       {
+          for(int i=0;i<=r;i++)
+          {
+              if(j==r||i==r||i==r-j)
+                  System.out.print(" *");
+              else
+                  System.out.print("  ");
+          }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+
+***********************************************************************
+Q10 WAP to print Hollow inverted right triangle star patten????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++)
+       {
+          for(int i=0;i<=r;i++)
+          {
+              if(j==0||i==0||i==r-j)
+                  System.out.print(" *");
+              else
+                  System.out.print("  ");
+          }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+*********************************************************************
+Q11.WAP to print Inverted Right Triangle Star Pattern?????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=1;j<=r;j++)
+       {
+          for(int i=1;i<=r-j;i++)
+          {
+              System.out.print("* ");
+          }
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+***********************************************************************
+Q12.WAP to print Inverted Mirrored Right Triangle Star Pattern????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r)
+    {
+       for(int j=0;j<=r;j++)
+       {
+          for(int i=0;i<=j;i++)
+          {
+              System.out.print("  ");
+          }
+          for(int k=0;k<r-j;k++)
+              System.out.print("* ");
+           System.out.println();
+       }
+
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+*******************************************************************8
+Q13.WAP to print Hollow Square Star Pattern????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int j = 0; j <= r; j++) {
+            for (int i = 0; i <= j; i++) {
+                if (i == 0 || j == 0 || i==r||j == r)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+***********************************************************
+Q14.WAP to print Hollow Rhombus Star Pattern???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int j = 0; j <= r; j++) {
+            for (int i = 0; i <=r-j; i++)
+                System.out.print("  ");
+            for(int k=0;k<=r;k++)
+            {
+                if(j==0||j==r||k==0||k==r)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+
+************************************************************8
+Q15.WAP to print Hollow Mirrored Rhombus Star Pattern????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int j = 0; j <= r; j++) {
+            for (int i = 0; i <j; i++)
+                System.out.print("  ");
+            for(int k=0;k<=r;k++)
+            {
+                if(j==0||j==r||k==0||k==r)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+
+***********************************************************8
+Q16.WAP to print Hollow Pyramid ???
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int i=1;i<=r;i++)
+        {
+            for(int j=r-i;j>0;j--)
+                System.out.print(" ");
+            for(int k=1;k<=2*i-1;k++)
+            {
+                if(k==1||i==r||k==2*i-1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+********************************************************************
+Q17.WAP to print Pyramid Star patten????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int i=1;i<=r;i++)
+        {
+            for(int j=r-i;j>0;j--)
+                System.out.print(" ");
+            for(int k=1;k<=2*i-1;k++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+****************************************************************
+Q18.WAP to print Inverted Pyramid Star Pattern????
+import java.util.Scanner;
+class MethodPatterns
+{
+    public void first(int r) {
+        for (int i=r;i>=1;i--)
+        {
+            for(int j=0;j<=r-i;j++)
+                System.out.print(" ");
+            for(int k=1;k<=2*i-1;k++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+public class Test
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int n=sc.nextInt();
+        MethodPatterns m=new MethodPatterns();
+        m.first(n);
+    }
+}
+********************************************************

@@ -1,0 +1,113 @@
+Q1.WAP to to input 3 digit number and check it is armstron or not???
+import java.util.Scanner;
+public class DMART
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n,r,sum=0,temp;
+        System.out.print("Enter the number to check it's armstrong or not : ");
+        n = sc.nextInt();
+        temp = n;
+        do
+        {
+            r = n%10;
+            sum=sum+(r*r*r);
+            n/=10;
+        }
+        if(temp==sum)
+            System.out.println("It's Armstrong number");
+        else
+            System.out.println("It's Not Armstrong number");
+    }while(n>0);
+}
+________________________________________________________________________________________________________-
+Q2. WAP to input a number and check it palindrome or not
+import java.util.Scanner;
+public class DMART
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n,r,sum=0,temp;
+        System.out.print("Enter the number to check it's Palindrom or not : ");
+        n = sc.nextInt();
+        temp = n;
+        do
+        {
+            r = n%10;
+            sum =sum*10+r;
+            n/=10;
+        }
+        if(temp==sum)
+            System.out.println("It's Palindrom number");
+        else
+            System.out.println("It's Not Palindrom number");
+    }while(n>0);
+}
+------------------------------------------------------------------------------------------------------------------
+Q3.WAP to calculate the reverse of any given number
+import java.util.Scanner;
+public class DMART
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n,r,sum=0,temp;
+        System.out.print("Enter the number : ");
+        n = sc.nextInt();
+        temp = n;
+        do
+        {
+            r = n%10;
+            sum =r+sum*10;
+            n/=10;
+        }
+        System.out.println("Rverse = "+sum);
+    }while(n>0);
+}
+---------------------------------------------------------------------------------------------------------
+Q4.WAP to program to calculate the factorial of any given number
+import java.util.Scanner;
+public class DMART
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n,i=1,fact=1;
+        System.out.print("Enter the number : ");
+        n = sc.nextInt();
+        do
+        {
+            fact = fact*i;
+            i++;
+        }
+        System.out.println("Factorial of "+n+"="+fact);
+    }while(i<=n);
+}
+---------------------------------------------------------------------------------------------------
+Q5.WAP to calculate the sum of given series 1 - 2 + 3 - 4 + 5 - 6................n term
+import java.util.Scanner;
+public class Hacker
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n,pos=0,neg=0;
+        int res,i=0;
+        System.out.print("Enter a number : ");
+        n = sc.nextInt();
+        do
+        {
+            if(i%2==0)
+                pos+=i;
+            else
+                neg+=i;
+            i++;
+            n--;
+        }
+        pos = pos*-1;
+        res = pos+neg;
+        System.out.println(pos);
+        System.out.println(neg);
+        System.out.println("Result = "+res);
+    }while(n>=0);
+}
+------------------------------------------------------------------------------------------------------
+Q6.   

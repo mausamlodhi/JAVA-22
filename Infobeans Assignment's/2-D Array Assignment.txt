@@ -1,0 +1,434 @@
+Q1.WAP to print Upper-Triangle elements of a matrix??
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                if(c>r)
+                    System.out.print(arr[r][c]);
+            }
+            System.out.println();
+        }
+    }
+}
+**********************************************************************
+Q2.WAP to print Lower-Triangle elements of a matrix??
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                if(c<r)
+                    System.out.print(arr[r][c]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+****************************************************************************************
+Q3.WAP to print the Right diagonal elements of 2-D Array???
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                if(c==r)
+                    System.out.print(arr[r][c]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+*********************************************************************************
+Q4.WAP to print the even sum of all elements in a matrix???
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        int sum=0;
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                if(arr[r][c]%2==0)
+                    sum+=arr[r][c];
+            }
+        }
+        System.out.println("The sum of even numbers of matrix = "+sum);
+    }
+}
+********************************************************************************************
+Q5.WAP to print sum of all prime numbre's in given matrix???
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        int sum=0;
+        int element;
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                element=arr[r][c];
+                for(int k=2;k<element;k++)
+                {
+                    if(element%k==0)
+                        break;
+                    else
+                        System.out.print(" "+arr[r][c]);
+                }
+            }
+        }
+        System.out.println("The sum of all prime numbers of matrix = "+sum);
+    }
+}
+***************************************************************************************************
+Q6.WAP to sort the 2-D Array???
+import java.util.Scanner;
+public class U_Triangle
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        int[][] arr=new int[m][n];
+        int sum=0;
+        int max=0;
+        int element;
+        System.out.println("Enter matrix of ("+m+"X"+n+")");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+            {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c]=sc.nextInt();
+            }
+        }
+        System.out.println("Origional Matrix : ");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+                System.out.print(" "+arr[r][c]);
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println("Resultant matrix : ");
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int i=0;i<arr.length;i++)
+            {
+                for(int c=1;c<arr[r].length;c++)
+                {
+                    if(arr[r][c]<arr[r][c-1])
+                    {
+                         arr[r][c] = arr[r][c] + arr[r][c - 1];
+                         arr[r][c - 1] = arr[r][c] - arr[r][c - 1];
+                         arr[r][c] = arr[r][c] - arr[r][c - 1];
+                     }
+                }
+            }
+        }
+        for(int r=0;r<arr.length;r++)
+        {
+            for(int c=0;c<arr[r].length;c++)
+                System.out.print(" "+arr[r][c]);
+            System.out.println();
+        }
+    }
+}
+
+******************************************************************************
+Q7.WAP to reverse the 2-D Array????
+import java.util.Scanner;
+public class Array_sort {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the order of matrix : ");
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int[][] arr = new int[m][n];
+
+        System.out.println("Enter matrix of (" + m + "X" + n + ")");
+        for (int r = 0; r < arr.length; r++) {
+            for (int c = 0; c < arr[r].length; c++) {
+                System.out.print("Enter the matrix elements : ");
+                arr[r][c] = sc.nextInt();
+            }
+        }
+        System.out.println("Origional Matrix : ");
+        for (int r = 0; r < arr.length; r++) {
+            for (int c = 0; c < arr[r].length; c++)
+                System.out.print(" " + arr[r][c]);
+            System.out.println();
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            int l=arr[i].length-1;
+            for(int k=0;k<l;k++) {
+                if (k != l / 2) {
+                    arr[i][k] = arr[i][k]+arr[i][l-k];
+                    arr[i][l - k] = arr[i][k] - arr[i][l - k];
+                    arr[i][k] = arr[i][k] - arr[i][l - k];
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Resultant Array : ");
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=0;j<arr[i].length;j++)
+                System.out.print(" "+arr[i][j]);
+            System.out.println();
+        }
+    }
+}
+**************************************************************************
+Q10.WAP to swap max & min rows???
+public class Array_sort
+{
+    public static void main(String[] args)
+    {
+        int[][] a={{1,2,13},{7,8,9},{4,5,6}};
+        int sum,t=0,maxrow=0,minrow=0,row,col=0,min=-2100000000;
+        for ( row = 0; row < a.length; row++)
+        {
+            sum=0;
+            for (col = 0; col < a.length; col++)
+            {
+                sum=sum+a[row][col];
+            }
+            System.out.println("sum of row "+row+" " +sum);
+            if (sum>t)
+            {
+                t=sum;
+                maxrow=row;
+            }
+            else {
+                min = sum ;
+                minrow = row;
+            }
+        }
+        System.out.println("max  "+t);
+        System.out.println("max row "+maxrow);
+        System.out.println("min row "+minrow);
+
+
+        for(col=0;col<3;col++)
+        {
+            a[minrow][col]=a[minrow][col]+a[maxrow][col];
+            a[maxrow][col]=a[minrow][col]-a[maxrow][col];
+            a[minrow][col]=a[minrow][col]-a[maxrow][col];
+        }
+        for(row=0;row<3;row++) {
+            for (col = 0; col < 3; col++)
+                System.out.print(a[row][col] + "  ");
+
+            System.out.println();
+
+        }
+    }
+}
+**************************************************************
+Q11.
+class Arr10{
+    public static void main(String args[]){
+        int x[][]={ {1,2,3,4},
+                {5,6,7,8},
+                {1,2,3,4},
+                {5,6,7,8} };
+        int temp;
+        System.out.println("given matrix...");
+        for( int r=0;r<x.length;r++){
+            for ( int c=0;c<x[r].length;c++){
+                System.out.print("  "+x[r][c]);
+            }
+            System.out.println();
+        }
+
+        for( int r=0;r<x.length;r++){
+            for( int c=0;c<x[r].length;c++){
+                if((r==0) || (c==0) || (c==3) || (r==3) )
+                    System.out.print(x[r][c]+" ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+************************************************************************
+Q12 WAP to add two matrix's????
+class Test{
+ public static void main(String args[]){
+  int a[][]={ {1,2,3}, {4,5,6}, {7,8,9} };
+  int b[][]={ {1,2,3}, {4,5,6}, {7,8,9} };
+  
+  int add[][]=new int [3][3];
+  
+  for(int r=0;r<a.length;r++){
+   for(int c=0;c<a[r].length;c++){
+    add[r][c]=a[r][c]+b[r][c];
+     System.out.print(add[r][c]+" ");
+   }
+   System.out.println();
+  }
+ }
+}
+**************************************************************************
+Q13. Addition..
+class Test {
+ public static void main(String arg[]) {
+ 
+  int a[][] = {
+                {1,5,2},
+                {5,2,2},
+                {2,3,1}
+              };
+           
+  int b[][] = {
+                {2,1,1},
+                {2,5,2},
+                {1,2,1}
+              };
+ 
+ int r=0,c=0,k=0;          
+ int x[][] = new int[3][3];
+
+  {
+   for(c=0;c<3;c++)
+   {
+    x[r][c]=0;
+    for(k=0;k<3;k++)
+    {
+     
+      x[r][c]=x[r][c]+(a[r][k]*b[k][c]);
+
+
+     
+    }
+    System.out.print(" "+x[r][c]);
+   }
+   System.out.println();
+  }
+ 
+ 
+   
+}
+}
+************************************************************************************************
+Q14.Transpose....
+class Test {
+ public static void main(String arg[]) {
+ 
+  int a[][] = {
+                {1,5,2},
+                {5,2,2},
+                {2,3,1}
+              };
+  int r=0,c=0;
+  int x[][] =new int[3][3];
+
+ 
+  for(r=0;r<3;r++)
+  {
+   for(c=0;c<3;c++)
+    {
+       
+      x[r][c]=a[c][r];
+      System.out.print(x[r][c]);
+    }
+   
+   System.out.println();
+   
+   }
+ }
+}
+***********************************************************************************************
+

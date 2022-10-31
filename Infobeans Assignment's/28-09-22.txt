@@ -1,0 +1,99 @@
+Q1. WAP to print the reverse of all number from 101 to 199
+import java.util.Scanner;
+public class Practice03
+{
+    public static void main(String[] args)
+    {
+        int s,r,j=101;
+        int n=j;
+        while(j<=199)
+        {
+            n=j;
+            s=0;
+            while(n!=0)
+            {
+                r = n%10;
+                s = s*10+r;
+                n/=10;
+            }
+            System.out.println(s);
+            j++;
+        }
+    }
+}
+------------------------------------------------------------------------------
+Q2. WAP to calculate x^y (x to the power y)
+import java.util.Scanner;
+public class Practice03
+{
+    public static void main(String[] args)
+    {
+        int x,y,resilt = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter X : ");
+        x = sc.nextInt();
+        System.out.print("Enter Y : ");
+        y = sc.nextInt();
+        while(y>0)
+        {
+
+            resilt = resilt*x;
+            y--;
+        }
+        System.out.println("Result = "+resilt);
+    }
+}
+----------------------------------------------------------------------------------
+Q3. WAP to print all palindrome number from 101 to 199
+import java.util.Scanner;
+public class Practice03
+{
+    public static void main(String[] args)
+    {
+        int r ,j=101,n,sum=0;
+        while(j<=200)
+        {
+            n=j;
+            sum=0;
+            while(n>0)
+            {
+                r = n%10;
+                sum=sum*10+r;
+                n/=10;
+            }
+            if(j==sum)
+                System.out.println(sum);
+            j++;
+        }
+
+
+    }
+}
+--------------------------------------------------------------------------------
+Q4. WAP to print all armstrong number from 101 to 999
+import java.util.Scanner;
+public class Practice03
+{
+    public static void main(String[] args)
+    {
+        int r ,j=101,n,sum=0;
+        while(j<=999)
+        {
+            n=j;
+            sum=0;
+            while(n>0)
+            {
+                r = n%10;
+                sum=sum+r*r*r;
+                n/=10;
+            }
+            if(j==sum)
+                System.out.println(sum);
+            j++;
+        }
+
+
+    }
+}
+---------------------------------------------------------------------------
+Q5.

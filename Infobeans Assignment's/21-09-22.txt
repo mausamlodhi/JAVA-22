@@ -1,0 +1,401 @@
+Q1. Take values of length and breadth of a rectangle from user and check if it's square or not???
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        float a, b;
+        System.out.print("Enter the length Rectangle : ");
+        a = sc.nextFloat();
+        System.out.print("Enter the breadth Rectangle : ");
+        b = sc.nextFloat();
+        if (a == b)
+            System.out.println("It's a Square ");
+        else
+            System.out.println("It's not a Square ");
+    }
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q2. A shop will give discount of 10% if the cost of purchased quantity is more than 1000???
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int q,t=0;
+        int d=0;
+        System.out.println("Hi sir we will give you discount 10 % if your bill is greater than Rs.1000");
+        System.out.print("How much products you wanaa buy : ");
+        q = sc.nextInt();
+        t = q*100;
+        if(t>=1000)
+        {
+            d  = t*10/100;
+            t =t-d;
+            System.out.println("Total bill : Rs."+t);
+        }
+        else
+            System.out.println("Total bill : Rs."+t);
+    }
+}
+-----------------------------------------------------------------------------------------------------
+Q3.A company will give bonus of 5% to employee if his year of service is more 5 years????
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int s;
+        float year,d=0,gross=0;
+        System.out.print("Please enter your salary : ");
+        s = sc.nextInt();
+        System.out.print("Please enter years : ");
+        year = sc.nextFloat();
+        if(year>=5)
+        {
+            d = s*5/100;
+            gross = s+d;
+            System.out.println("You'r salary = Rs."+gross);
+        }
+        else
+            System.out.println("You'r salary = Rs."+s);
+
+    }
+}
+----------------------------------------------------------------------------------------------
+Q4.A school has follwing rules
+Below 25    F
+Below 25-45 E
+Below 45-50 D
+Below 50-60 C
+Below 60-80 B
+Above 80    A 
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int m;
+        System.out.print("Enter marks that you scored : ");
+        m = sc.nextInt();
+        if(m>=0&&m<=25)
+            System.out.println("Grade : F");
+        else if(m>25&&m<=45)
+            System.out.println("Grade : E");
+        else if(m>45&&m<=50)
+            System.out.println("Grade : D");
+        else if(m>50&&m<=60)
+        System.out.println("Grade : C");
+        else if(m>60&&m<=80)
+            System.out.println("Grade : B");
+        else if(m>80&&m<=100)
+            System.out.println("Grade : A");
+        else
+            System.out.println("Grade not defined");
+
+    }
+}
+---------------------------------------------------------------------------------------------
+Q5.Take input of age of 3 people by user and determine oldest and youngest among them???
+import java.util.Scanner;
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a1,a2,a3,old,you;
+        System.out.print("Enter the age of First people : ");
+        a1 = sc.nextInt();
+        System.out.print("Enter the age of second people : ");
+        a2 = sc.nextInt();
+        System.out.print("Enter the age of third people : ");
+        a3 = sc.nextInt();
+        if(a1==a2&&a2==a3)
+            System.out.println("All peoples are same age");
+        else
+        {
+            old = a1 > a2 && a1 > a3 ? a1 : a2 > a1 && a2 > a3 ? a2 : a3;
+            System.out.println("Oldest people is : " + old);
+            you = a1 < a2 && a1 < a2 ? a1 : a2 < a3 ? a2 : a3;
+            System.out.println("Youngest is " + you);
+        }
+    }
+}
+----------------------------------------------------------------------------------------
+Q6. WAP to print absolute value of a number entered by user ???
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.print("Enter a number : ");
+        n = sc.nextInt();
+        if(n<0)
+        {
+            n*=-1;
+            System.out.println("Number : "+n);
+        }
+        else
+            System.out.println("NUmber : "+n);
+    }
+}
+---------------------------------------------------------------------------------------
+Q7.A student will not allowed to sit in exam if attendence is less than 75%???
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        float nch,nca;
+        float per;
+        System.out.print("Enter held Classes : ");
+        nch = sc.nextFloat();
+        System.out.print("Enter number classes that you have attended : ");
+        nca = sc.nextFloat();
+        per = (nca/nch)*100f;
+        if(per>=75)
+            System.out.println("You are eligible ");
+        else
+            System.out.println("You'r not eligible");
+        System.out.println("Percentage = "+per+"%");
+    }
+}
+--------------------------------------------------------------------------------------------
+Q8.import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        float nch,nca;
+        float per;
+        char ch;
+        System.out.print("Enter held Classes : ");
+        nch = sc.nextFloat();
+        System.out.print("Enter number classes that you have attended : ");
+        nca = sc.nextFloat();
+        per = (nca/nch)*100f;
+        System.out.print("You have any medical cause(Y/N) : ");
+        ch=sc.next().charAt(0);
+        if(per>=75)
+            System.out.println("You are eligible ");
+        else
+            {
+                if(ch=='Y'||ch=='y')
+                    System.out.println("You'r eligible");
+                else
+                    System.out.println("You'r not eligible");
+            }
+        System.out.println("Percentage = "+per+"%");
+    }
+}
+---------------------------------------------------------------------------------------------------------
+Q9. WAP to check that entered character is lower case or upper case ???
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        char ch;
+        System.out.print("Enter a character to check it's lower or upper : ");
+        ch = sc.next().charAt(0);
+        if(ch>=65&&ch<=90)
+            System.out.println("Character is Upper case");
+        else if(ch>=97&&ch<=122)
+            System.out.println("Character is lower");
+        else
+            System.out.println("Undefined character");
+    }
+}
+---------------------------------------------------------------------------------------------
+Q10. WAP to check if year is leap or not ????
+import java.util.Scanner;
+public class Asgn2
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int y;
+        System.out.print("Enter year to check that it's leap year or not : ");
+        y = sc.nextInt();
+        if((y%4==0)&&!(y%100==0))
+            System.out.println("Year is leap year");
+        else if(y%400==0)
+            System.out.println("Year is leap year");
+        else
+            System.out.println("Year is not leap year");
+
+    }
+}
+-------------------------------------------------------------------------------------------------
+Q11. A 4 digit number is entered through keyboard. Write a program to print a new number with digits reversed as of orignal one. E.g.-
+INPUT : 1234        OUTPUT : 4321
+INPUT : 5982        OUTPUT : 2895
+import java.util.Scanner;
+class Reverse
+  {
+    public static void main(String[] args)
+    {
+        int num , reversed = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number you want to reverse: ");
+
+        num = sc.nextInt();
+        System.out.println("Original Number: " + num);
+        while(num != 0)
+        {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+        System.out.println("Reversed Number: " + reversed);
+    }
+}
+----------------------------------------------------------------------------------------------
+Q12.  Write a java program to accept the cost price of a bike
+    and display the road tax to be paid according to the 
+    following criteria.
+    Cost Price(In Rs)		Tax
+     > 100000			 15%
+     >50000 and <=100000	 10%
+     <=50000			 5%
+import java.util.Scanner ;
+class Bike
+{
+    public static void main (String[] args)
+    {
+
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the cost price of bike");
+        int b = sc.nextInt();
+        double Tax=0.0;
+        if (b>100000)
+        {
+           Tax= b*0.15;
+            System.out.println("Road Tax Levied "+Tax);
+        }
+        else if (b>=50000)
+        {
+            Tax= b*0.10;
+            System.out.println(" Road Tax Levied "+Tax);
+        }
+        else if (b > 0 && b < 50000)
+        {
+            Tax= b*0.05;
+            System.out.println("Road Tax Levied "+Tax);
+        }
+        else
+        System.out.println(" Plz input valid price ");
+
+    }
+
+    }
+-------------------------------------------------------------------------------------------------------------------------------
+Q13. Write a program to accept percantage from the user and
+display grade according to the following criteria
+  Marks	  		Grade
+  > 90       		 A
+  >80 and <=90		 B
+  >=60 and <=80		 C
+  below 60		 D
+import java .util . *;
+class Marks{
+    public static void main (String args[]){
+
+        Scanner sc = new Scanner (System.in);
+
+        System.out.println("enter physics marks ");
+        double p = sc.nextDouble();
+
+        System.out.println("enter chemistry marks ");
+        double ch = sc.nextDouble();
+
+        System.out.println("enter maths marks ");
+        double m = sc.nextDouble();
+
+        System.out.println("enter biology marks ");
+        double b = sc.nextDouble();
+
+        System.out.println("enter computer marks ");
+        double c = sc.nextDouble();
+
+        double percentage = (p+ch+m+b+c)/500*100;
+        System.out.println("percentage is "+percentage);
+
+
+        if (percentage<=100)
+        {
+            if (percentage<25)
+                System.out.println("Grade F");
+
+            else if (percentage>=25 && percentage<45)
+                System.out.println("Grade E");
+
+            else if (percentage>=45 && percentage<50)
+                System.out.println("Grade D");
+
+            else if (percentage>=50 && percentage<60)
+                System.out.println("Grade C");
+
+            else if (percentage>=60 && percentage<80)
+                System.out.println("Grade B");
+
+            else if (percentage>=80)
+                System.out.println("Grade A");
+
+        }
+        else
+            System.out.println("You entered wrong marks");
+
+
+    }
+}
+--------------------------------------------------------------------------------------------------
+Q14.Write a Java program that keeps a number from the user and generates an integer between 1 and 7 and displays the name of the weekday.
+Test Data
+Input number: 3
+Expected Output :
+Wednesday
+import java.util.Scanner;
+class Day {
+    public static void main (String args[]){
+        Scanner sc = new Scanner (System.in);
+
+        System.out.println("Enter number between 1 to 7");
+        int n = sc.nextInt();
+
+        if(n==1)
+            System.out.println("MONDAY");
+
+        if(n==2)
+            System.out.println("TUESDAY");
+
+        if(n==3)
+            System.out.println("WEDNESDAY");
+
+        if(n==4)
+            System.out.println("THRUSDAY");
+
+        if(n==5)
+            System.out.println("FRIDAY");
+
+        if(n==6)
+            System.out.println("SATURDAY");
+
+        if(n==7)
+            System.out.println("SUNDAY");
+
+        if(n==0 || n>7)
+            System.out.println("Plz enter No. B/w 0-7 ");
+
+    }
+}

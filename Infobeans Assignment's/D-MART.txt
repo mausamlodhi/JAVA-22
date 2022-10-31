@@ -1,0 +1,169 @@
+import java.util.Scanner;
+class Dmart
+{
+    public static final String TEXT_RESET = "\u001B[0m";
+    public static final String TEXT_BLACK = "\u001B[30m";
+    public static final String TEXT_RED = "\u001B[31m";
+    public static final String TEXT_GREEN = "\u001B[32m";
+    public static void main(String[] args)
+    {
+        float disa=0.0f,dise,disj;
+        Scanner sc=new Scanner (System.in);
+
+        System.out.println("Enter customer Name :");
+        String x=sc.nextLine();// nextLine is used for enter multiple words
+        System.out.println("Enter Customer Gender :");
+        char gender = sc.next().charAt(0);
+
+        System.out.println("Enter 1st item Name:");
+        String a=sc.next();
+        System.out.println("Enter quantity of 1st product :");
+        int a3=sc.nextInt();
+        System.out.println("Enter price of 1st product :");
+        int a1=sc.nextInt();
+        int a4= a1*a3;
+        if (a3>4)
+            disa = a1*a3*0.95f;//
+
+        System.out.println("Enter 2nd item Name:");
+        String b=sc.next();
+        System.out.println("Enter quantity of 2nd product :");
+        int b3=sc.nextInt();
+        System.out.println("Enter price of 2nd product :");
+        int b1=sc.nextInt();
+        int b4= b1*b3;
+
+
+
+        System.out.println("Enter 3rd item Name:");
+        String c=sc.next();
+        System.out.println("Enter quantity of 3rd product :");
+        int c3=sc.nextInt();
+        System.out.println("Enter price of 3rd product :");
+        int c1=sc.nextInt();
+        int c4= c1*c3;
+
+        System.out.println("Enter 4th item Name:");
+        String d=sc.next();
+        System.out.println("Enter quantity of 4th product :");
+        int d3=sc.nextInt();
+        System.out.println("Enter price of 4th product :");
+        int d1=sc.nextInt();
+        int d4= d1*d3;
+
+
+        System.out.println("Enter 5th item Name:");
+        String e=sc.next();
+        System.out.println("Enter quantity of 5th product :");
+        int e3=sc.nextInt();
+        System.out.println("Enter price of 5th product :");
+        int e1=sc.nextInt();
+        int e4= e1*e3;
+        dise = e4*0.9f;
+
+        System.out.println("Enter 6th Name:");
+        String f=sc.next();
+        System.out.println("Enter quantity of 6th product :");
+        int f3=sc.nextInt();
+        System.out.println("Enter price of 6th product :");
+        int f1=sc.nextInt();
+        int f4= f1*f3;
+
+        System.out.println("Enter 7th item Name:");
+        String g=sc.next();
+        System.out.println("Enter quantity of 7th product :");
+        int g3=sc.nextInt();
+        System.out.println("Enter price of 7th product :");
+        int g1=sc.nextInt();
+        int g4= g1*g3;
+
+        System.out.println("Enter 8th item Name:");
+        String h=sc.next();
+        System.out.println("Enter quantity of 8th product :");
+        int h3=sc.nextInt();
+        System.out.println("Enter price of 8th product :");
+        int h1=sc.nextInt();
+        int h4= h1*h3;
+
+
+        System.out.println("Enter 9th item Name:");
+        String i=sc.next();
+        System.out.println("Enter quantity of 9th product :");
+        int i3=sc.nextInt();
+        System.out.println("Enter price of 9th product :");
+        int i1=sc.nextInt();
+        int i4= i1*i3;
+
+
+
+        System.out.println("Enter 10th item Name:");
+        String j=sc.next();
+        System.out.println("Enter quantity of 10th product :");
+        int j3=sc.nextInt();
+        System.out.println("Enter price of 10th product :");
+        int j1=sc.nextInt();
+        int j4= j1*j3;
+        disj = j4*0.85f;
+
+        double pricetotal = (int)disa+b4+c4+d4+(int)dise+f4+g4+h4+i4+(int)disj ;
+        double total_price=pricetotal;
+
+        if (pricetotal >10000)
+            total_price = pricetotal*85/100;
+
+        if (pricetotal>5000 && pricetotal<=10000)
+            total_price =  (pricetotal*90/100);
+
+
+        double netbill = total_price ;
+        double dis = total_price-pricetotal;
+        String gen = " ";
+        if (gender=='f' ||gender=='F')
+            gen ="CADBURY";
+        else if (gender=='m'|| gender=='M')
+            gen = "WALLET";
+
+        System.out.println("DO YOU WANT CARRY BAG ");
+        System.out.println("PRESS Y FOR YES AND N FOR NO");
+        char carry = sc.next().charAt(0);
+        double carry_price=0;
+        if (carry=='y'||carry=='Y')
+            carry_price = 10.0;
+
+        else if (carry=='n'||carry=='N')
+            carry_price = 0.0;
+
+        System.out.println(TEXT_RED+"\t\t\t\t\t\t\tD-Mart"+TEXT_RESET);
+         System.out.println("----------------------------------------------------------------------");
+         System.out.print(TEXT_BLACK+"Name : "+x+"\t\t\t\t\tDate : 22/09/2022"+TEXT_RESET);
+        System.out.println("\n----------------------------------------------------------------------");
+        System.out.println(TEXT_GREEN+"Item Name\t\tQuantity\t\tPrice\t\tTotal\t\tAfter Discount\n"+TEXT_RESET);
+        System.out.println(""+a+"   \t\t\t\t"+a3+" \t\t\t"+a1+"\t\t\t"+a4+"\t\t\t"+disa);
+        System.out.println(""+b+"   \t\t\t\t"+b3+" \t\t\t"+b1+"\t\t\t"+b4+"\t\t\t"+b4);
+        System.out.println(""+c+"   \t\t\t\t"+c3+" \t\t\t"+c1+"\t\t\t"+c4+"\t\t\t"+c4);
+        System.out.println(""+d+"   \t\t\t\t"+d3+" \t\t\t"+d1+"\t\t\t"+d4+"\t\t\t"+d4);
+        System.out.println(""+e+"   \t\t\t\t"+e3+" \t\t\t"+e1+"\t\t\t"+e4+"\t\t\t"+dise);
+        System.out.println(""+f+"   \t\t\t\t"+f3+" \t\t\t"+f1+"\t\t\t"+f4+"\t\t\t"+f4);
+        System.out.println(""+g+"   \t\t\t\t"+g3+" \t\t\t"+g1+"\t\t\t"+g4+"\t\t\t"+g4);
+        System.out.println(""+h+"   \t\t\t\t"+h3+" \t\t\t"+h1+"\t\t\t"+h4+"\t\t\t"+h4);
+        System.out.println(""+i+"   \t\t\t\t"+i3+" \t\t\t"+i1+"\t\t\t"+i4+"\t\t\t"+i4);
+        System.out.println(""+j+"   \t\t\t\t"+j3+" \t\t\t"+j1+"\t\t\t"+j4+"\t\t\t"+disj);
+
+
+        System.out.println("----------------------------------------------------------------------");
+        System.out.println("         \t\t\t\t\t\t A.P. \t\tD.P.");
+        System.out.println(TEXT_RED+"         \t\t\t\t\t\t"+pricetotal+"\t\t"+dis+TEXT_RESET);
+        netbill=(int)total_price+carry;
+        System.out.println("GIFT:-"+gen+"\t\t\t\t\t0.00\t\t0.00");
+        System.out.println("CARRY BAG :"+carry+"\t\t\t\t\t"+carry_price+"\t\t"+carry_price);
+        System.out.println("GST (10%) \t\t\t\t\t\t"+(netbill*10/100)+"");
+        System.out.println("Final bill \t\t\t\t\t\t"+(netbill*1.10)+"");
+
+        System.out.println("----------------------------------------------------------------------");
+
+        System.out.println(TEXT_RED+"\t\t\t\t THANK YOU "+TEXT_RESET);
+        System.out.println(TEXT_RED+"\t\t\t\t FOR VISITING  "+TEXT_RESET);
+        System.out.println(TEXT_RED+"\t\t\t\t D MART  "+TEXT_RESET);
+    }
+    
+}

@@ -1,0 +1,193 @@
+Q1.WAP to print Square star pattern?
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=0;i<10;i++)
+        {
+            for(int j=0;j<7;j++)
+                System.out.print(" *");
+            System.out.println();
+        }
+    }
+}
+******************************************************************
+Q2. WAP to print Hollow Square star pattern with diagonal??
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<10;i++)
+        {
+            for(int j=1;j<10;j++)
+            {
+                if(i==1)
+                    System.out.print(" *");
+                else if(i==2&&(j==1||j==2||j==8||j==9))
+                    System.out.print(" *");
+                else if(i==3&&(j==1||j==3||j==7||j==9))
+                    System.out.print(" *");
+                else if(i==4&&(j==1||j==4||j==6||j==9))
+                    System.out.print(" *");
+                else if(i==5&&(j==1||j==5||j==9))
+                    System.out.print(" *");
+                else if(i==6&&(j==1||j==4||j==6||j==9))
+                    System.out.print(" *");
+                else if(i==7&&(j==1||j==3||j==7||j==9))
+                    System.out.print(" *");
+                else if(i==8&&(j==1||j==2||j==8||j==9))
+                    System.out.print(" *");
+                else if(i==9)
+                    System.out.print(" *");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+}
+**********************************************************************************
+Q3.WAP to print Right triangle star??
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=1;j<=9;j++)
+                {
+                    if(j==i||j<i)
+                        System.out.print(" *");
+                    else
+                        System.out.print("  ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+Q4 . WAP to print hollowright mirrored triangle????
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=5;i++)
+            {
+                for(int j=1;j<=5;j++)
+                {
+                    if(j==5-i||j==5||i==5)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+**************************************************************************
+Q5.WAP to print inverted mirrored hollow right triangle???
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=1;j<=9;j++)
+                {
+                    if(i==j||j==9||i==1)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+*********************************************************************************
+Q6. WAP to print hollow inverted right triangle ????
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=1;j<=9;j++)
+                {
+                    if(j==9-i||j==1||i==1)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+***********************************************************************
+Q7.WAP to print inverted right triangle star????
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=1;j<=9;j++)
+                {
+                    if(i<=9-j)
+                        System.out.print("*");
+                    else
+                        System.out.print(" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+********************************************************************
+Q8. WAP to print mirrored right triangle????
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=1;j<=9;j++)
+                {
+                    if(i<=9-j)
+                        System.out.print(" ");
+                    else
+                        System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+***********************************************************************
+Q9.WAP to print inverted mirrored right triangle???
+public class Practice
+{
+    public static void main(String[] args)
+    {
+        {
+            for(int i=1;i<=9;i++)
+            {
+                for(int j=9-i;j<9;j++)
+                    System.out.print(" ");
+                for(int k=1;k<9-i;k++)
+                    System.out.print("*");
+                System.out.println();
+            }
+        }
+    }
+}
+************************************************************************
+Q10.WAP to print 
