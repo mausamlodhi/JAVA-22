@@ -1,0 +1,463 @@
+Q19.Make list of Students having name, roll no., age, score. Write a program to accept 10 students record and arrange the Students based on the score group [0-50], [50-65],[65-80],[80-100].
+import java.util.Scanner;
+class Student
+{
+    private String[] name;
+    private int[] age;
+    private int[] score;
+    private int[] rollno;
+    public Student(String[] name,int[] age,int[]score,int[] rollno)
+    {
+        this.name=name;
+        this.age=age;
+        this.score=score;
+        this.rollno=rollno;
+    }
+    public String[] setName(String[] name)
+    {
+        this.name=name;
+        return name;
+    }
+    public int[] setAge(int[] age)
+    {
+        this.age=age;
+        return age;
+    }
+    public int[] setScore(int[] score)
+    {
+        this.score=score;
+        return score;
+    }
+    public int[] setRollNo(int[] rollno)
+    {
+        this.rollno=rollno;
+        return rollno;
+    }
+    public void display()
+    {
+        System.out.println("All students record...");
+        for(int i=0;i<age.length;i++)
+        {
+            if(score[i]>=0&&score[i]<=50)
+            {
+                System.out.println("Name : "+name[i]);
+                System.out.println("Age : "+age[i]);
+                System.out.println("Roll number : "+rollno[i]);
+                System.out.println("Score : "+score[i]);
+            }
+        }
+        for(int i=0;i<age.length;i++)
+        {
+            if(score[i]>50&&score[i]<=65)
+            {
+                System.out.println("Name : "+name[i]);
+                System.out.println("Age : "+age[i]);
+                System.out.println("Roll number : "+rollno[i]);
+                System.out.println("Score : "+score[i]);
+            }
+        }
+        for(int i=0;i<age.length;i++)
+        {
+            if(score[i]>65&&score[i]<=80)
+            {
+                System.out.println("Name : "+name[i]);
+                System.out.println("Age : "+age[i]);
+                System.out.println("Roll number : "+rollno[i]);
+                System.out.println("Score : "+score[i]);
+            }
+        }
+        for(int i=0;i<age.length;i++)
+        {
+            if(score[i]>80&&score[i]<=100)
+            {
+                System.out.println("Name : "+name[i]);
+                System.out.println("Age : "+age[i]);
+                System.out.println("Roll number : "+rollno[i]);
+                System.out.println("Score : "+score[i]);
+            }
+        }
+    }
+}
+public class Students
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int[] rollno={23,25,27,29,11};
+        int[] age={18,19,21,18,20};
+        int[] score={25,76,81,91,49};
+        String[] name={"Mausam","Chirag","Shivendra","Ajay","Krati"};
+        Student stu=new Student(name,age,score,rollno);
+        stu.display();
+    }
+}
+
+******************************************************************************************************
+Q16 Create a class Person with properties (name and age) with following features.
+Default age of person should be 18.
+A person object can be initialized with name and age.
+Method to display name and age of person.*/
+
+class Person{
+ private int age=18;
+ private String name;
+ 
+ 
+ public  Person(String n,int a){
+  name=n;
+  age=a;
+  if(age<=18){
+   age=18;
+  }
+ 
+ }
+ public void display(){
+  System.out.println(" "+name+" "+age);
+ }
+}
+
+class TestMain{
+ public static void main(String args[]){
+ 
+ 
+  Person obj = new Person("krati",2);
+ 
+ 
+  obj.display();
+ 
+ 
+ }
+}
+************************************************************************************
+Q15.Create a class MathOperation containing method ‘multiply’ to calculate multiplication of following arguments.
+two integers
+three float
+all elements of array
+one double and one integer */
+
+import java.util.Scanner;
+class Addition{
+  private double a,b,c,d;
+  public void setData(double a, double b,double c){
+   this.a = a;
+   this.b = b;
+   this.c = c;
+  }  
+  public void multi1(int a, int b){
+   System.out.println("multiplication of two intiger value is  : "+(a*b));
+  }
+ 
+ 
+  public void multi2(float a,float b , float c){
+   System.out.println("multiplication of three float value is  : "+(a*b*c));
+  }
+ 
+  public void multi3(double a,int b){
+   System.out.println("multiplication of double and intiger value  is  : "+(a*b));
+  }
+
+}
+
+class TestMain{
+  public static void main(String args[]){
+      Addition obj = new Addition();
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter numbers for multiplications");
+      double a = sc.nextDouble();
+      double b = sc.nextDouble();
+      double c = sc.nextDouble();
+      obj.setData(a,b,c);
+      System.out.println();
+      obj.multi1((int)a,(int)b);  
+      System.out.println();
+      obj.multi2((float)a,(float)b,(float)c);  
+      System.out.println();
+      obj.multi3(a,(int)b);  
+      System.out.println();  
+     
+   }
+}
+******************************************************************
+Q14.Create a class MathOperation containing method ‘multiply’ to calculate multiplication of following arguments.
+two integers
+three float
+all elements of array
+one double and one integer
+import java.util.Scanner;
+class Addition{
+  private int a,b;
+  public void setData(int a, int b){
+   this.a = a;
+   this.b = b;
+  }  
+  public void add(){
+   System.out.println("Addition : "+(a+b));
+  }
+  public void power(){
+   System.out.println("squre of a is = : "+(a*a)+"\n"+"squre of b is "+(b*b));
+  }
+ 
+ 
+  public void sub(){
+   System.out.println("sub is : "+(a-b));
+  }
+ 
+  public void malti(){
+   System.out.println("multiplication is  : "+(a*b));
+  }
+
+  public void display(){
+   System.out.println("a : "+a+" b : "+b);
+  }
+ 
+  public void fect(){
+   int fect = 1;
+   for(int i=1; i<=a; i++)
+    {
+      fect = fect*i;
+    }
+   System.out.println("fectoriyal of a is  : "+fect);
+  }
+  public void fect2(){
+   int fect2 = 1;
+   for(int i=1; i<=b; i++)
+    {
+      fect2 = fect2*i;
+    }
+   System.out.println("fectoriyal of b is  : "+fect2);
+  }
+   
+  public void rev(int num){
+   int reserv = 0;
+   while(0!=num){
+    reserv = (reserv*10)+(num%10);
+    num = num/10;
+   }
+   System.out.println(reserv);
+  }
+ 
+  public void prim(int n){
+   int i = 2;
+   int count=0;
+   while(i<n){
+    if(n%i==0)
+      {
+          count++;
+          break;
+      }
+    i++;
+     }
+   if (count==0)
+    {
+     System.out.println(n+" is prime number");
+    }
+   else
+    System.out.println(n +" is not prime");  
+  }
+ 
+  public void greater(){
+   if(a>b)
+    System.out.println(a+" is greater number");
+   else
+    System.out.println(b+" is greater number");
+  }
+}
+
+class TestMain{
+  public static void main(String args[]){
+      Addition obj = new Addition();
+      Scanner sc = new Scanner(System.in);
+      System.out.println(" Enetr two numbers ");
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      obj.setData(a,b);
+      System.out.println();
+      obj.add();  
+      System.out.println();
+      obj.power();  
+      System.out.println();  
+      obj.sub();
+      System.out.println();
+      obj.malti();
+      System.out.println();    
+      obj.fect();
+      System.out.println();  
+      obj.fect2();
+      System.out.println();  
+      obj.greater();
+      System.out.println();  
+      System.out.println("enter the number to check number is prime or not ");
+      int n = sc.nextInt();
+      obj.prim(n);
+      System.out.println();  
+      System.out.println("Enter the number for reverse ");
+      int num = sc.nextInt();
+      obj.rev(num);
+      System.out.println();      
+      obj.display();  
+   }
+
+*****************************************************************************************
+Q13. Create a class to calculate Area of circle with one data member to store the radius and another to store area value. Create method members
+init - to input radius from user
+calc - to calculate area
+display- to display area
+import java.util.Scanner;
+class Area
+{  
+ private  double calc=0,pi=3.14;
+ private double r=0;
+ public void setA(double r)
+ {
+   this.r=r;
+   pi=3.14;
+ }
+ public double calc()
+ {
+   calc=0;
+   calc=pi*(r*r);
+   return calc;
+ }
+ 
+ public void display(){
+   System.out.println("calculation of area of circle is = "+calc);
+ }
+ public void setR(double r)
+  {
+   this.r=r;
+  }
+ public double getR(){
+   return r;
+ }
+ 
+}
+
+class Test{  
+public static void main(String args[]){  
+   Scanner sc = new Scanner(System.in);
+   System.out.println(" enter the redius ");
+   double r = sc.nextDouble();
+   Area obj=new Area();
+   obj.setA(r);
+   obj.calc();
+   obj.display();
+   obj.setR(9.2);
+   obj.calc();
+   obj.display();    
+}  
+}
+***************************************************************************************88
+Q20.Create class Tile to store the edge length of a square tile , and create another class Floor to store length and width of a rectangular floor. Add method totalTiles(Tile t) in Floor class with Tile as argument to calculate the whole number of tiles needed to cover the floor completely.
+class tile{
+ private int a ,squ_area;
+  public void rect(int a){
+   this.a =a;
+   squ_area = a*a;
+   System.out.println("Area of square is : "+squ_area);
+  }
+ public int getArea(){
+  return squ_area;
+ }
+}
+
+class floor{
+ public static void main(String args[]){
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter length and breadth of rectangular room...");
+ int length = sc.nextInt();
+ int breadth= sc.nextInt();
+ 
+ int rect_area = length*breadth;
+ System.out.println("Area of rectanglar floor is : "+rect_area);
+ System.out.println("Enter side of square");
+ int a = sc.nextInt();
+ tile obj = new tile();
+  
+  obj.rect(a);
+  System.out.println("number of tiles required are : "+(rect_area/obj.getArea()));
+ }
+}
+*****************************************************************************************
+Q18 Create class Product (pid, price, quantity) with parameterized constructor.Create a main function in different class (say XYZ) and perform following task:
+Accept five product information from user and store in an array
+Find Pid of product with highest price.
+Create method (with array of product’s object as argument) in XYZ class to calculate and return total amount spent on all products. (amount spent on single product=price of product * quantity of product).
+import java.util.Arrays;
+import java.util.Scanner;
+class Product1
+{
+    private int[] pid;
+    private int[] price;
+    private int[] quantity;
+    private int[] total;
+    private int l;
+    public Product1(int[] pid,int[] price,int[] quantity,int l)
+    {
+        this.pid=pid;
+        this.price=price;
+        this.quantity=quantity;
+        this.l=l;
+    }
+    public int[] setPid(int[] pid)
+    {
+        this.pid=pid;
+        return pid;
+    }
+    public int[] setPrice(int[] price)
+    {
+        this.price=price;
+        return price;
+    }
+    public int[] setQuantity(int[] quantity)
+    {
+        this.quantity=quantity;
+        return quantity;
+    }
+    public void highestPrice()
+    {
+        int i;
+        int max=price[0];
+        int index=0;
+        for(i=0;i<l;i++)
+        {
+           if(max<price[i])
+           {
+               max=price[i];
+               index=i;
+           }
+        }
+        System.out.println("Highest producr in Price is...");
+        System.out.println("Price : "+price[index]);
+        System.out.println("Product ID : "+pid[index]);
+    }
+    public int[] display(int[] total)
+    {
+        this.total=total;
+        for(int i=0;i<price.length;i++)
+        {
+            total[i]=price[i]*quantity[i];
+        }
+        return total;
+    }
+    public void display1()
+    {
+        for(int i=0;i<price.length;i++)
+            System.out.println("Total spent amount of product "+pid[i]+" = "+total[i]);
+    }
+}
+public class Product
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int[] pid={1,2,3,4,5};
+        int[] price={45,600,35,1000,100};
+        int[] quantity={2,6,1,4,1};
+        int l=price.length;
+        Product1 obj=new Product1(pid,price,quantity,l);
+        obj.highestPrice();
+        obj.display(quantity);
+        obj.display1();
+    }
+}
+
