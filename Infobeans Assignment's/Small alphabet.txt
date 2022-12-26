@@ -1,0 +1,429 @@
+Q1.WAP to print small a??
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if((i==1&&(j==1||j==2||j==3))||(i==2&&j==4)||(i==3&&(j==2||j==3||j==4))||(i==4&&(j==2||j==4))||(i==5&&(j==2||j==3||j==4)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+************************************************
+Q2.WAP to print small b??
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if((j==1&&(i==1||i==2||i==3||i==4||i==5||i==6))||(i==4&&(j==2||j==3))||(i==5&&j==4)||(i==6&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+************************************************
+Q3.WAP to print small c???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=4; i++)
+      {
+        for(int j =1; j<=3; j++){
+          if((i==1&&(j==2||j==3))||(j==1&&(i==2||i==3))||(i==4&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+***************************************************
+Q4.WAP to print small d???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if((j==4&&(i==1||i==2||i==3||i==4||i==5||i==6))||(i==4&&(j==2||j==3))||(i==5&&j==1)||(i==6&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+******************************************************
+Q5.WAP to print small e???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if((i==1&&(j==2||j==3))||(i==2&&(j==4||j==1))||(i==3&&(j==1||j==2||j==3))||(i==4&&j==1)||(i==5&&j==1)||(i==6&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+************************************************************
+Q8.WAP to print small f???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if((i==1&&(j==4||j==3))||(j==2&&(i==2||i==3||i==4||i==5||i==6))||(i==4&&(j==1||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+***********************************************************
+Q9.WAP to print small g???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=9; i++)
+      {
+        for(int j =1; j<=6; j++){
+          if((i==1&&(j==2||j==3||j==4))||(i==2&&(j==5||j==1))||(i==3&&(j==2||j==3||j==4||j==5))||(i==4&&(j==5||j==6))||(i==5&&(j==4||j==5))||(i==6&&(j==3||j==5))||(i==7&&(j==2||j==5))||(i==8&&(j==3||j==5))||(i==9&&(j==4||j==5)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+********************************************************
+Q10.WAP to print small h???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=4; j++){
+          if(j==1 || (i==6&&j==4)||(i==3&&(j==1||j==2||j==3))||(i==4&&j==4)||(i==5&&j==4)||(i==6&&j==4))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+************************************************
+Q11.WAP to print small j???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+        for(int j =1; j<=2; j++){
+          if((i>2&&j==2)||(i==1&&j==2)||(i==7&&j==1))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+***************************************************
+Q12.WAP to print small k???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=3; j++){
+          if(j==1||(i==4&&j==3)||(i==5&&j==2)||(i==6&&j==3))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+**************************************************
+Q13.WAP to print small l???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+        for(int j =1; j<=1; j++){
+          if((i==1||j==1))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+         
+******************************************************
+Q14.WAP to print small m???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if(j==1||(j==5&&i>2)||(i==2&&(j==2||j==4))||(i==3&&j==3))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+**********************************************************
+Q15.WAP to print small n???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if(j==1||(j==4&&i>2)||(i==2&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+**********************************************************
+Q16.WAP to print small o???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if((i==1&&(j==2||j==3))||((i>1&&i<6)&&(j==1||j==4))||(i==6&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+********************************************************
+Q17.WAP to print small p???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+       for(int j =1; j<=6; j++){
+          if(j==1||((i==1||i==3)&&j<=3)||(i==2&&j==4))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+       } 
+       System.out.println();
+      
+     }
+    }  
+  }   
+************************************************
+Q18.WAP to print small q???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+       for(int j =1; j<=6; j++){
+          if(j==4||(i==1&&(j==2||j==3))||(j==1&&(i>1&&i<5))||(i==6&&(j==5||j==6))||(i==5&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+       } 
+       System.out.println();
+      
+     }
+    }  
+  }   
+*********************************************
+Q19.WAP to print small r???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=6; i++)
+      {
+       for(int j =1; j<=4; j++){
+          if(j==1||(i==2&&j==2)||(i==1&&(j==3||j==4)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+       } 
+       System.out.println();
+      
+     }
+    }  
+  }   
+**************************************************
+Q19.WAP to print small s???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+       for(int j =1; j<=4; j++){
+          if((i==1||j<1)||(i==2&&(j==1||j==3))||(i==3&&(j==2||j==3))||(i==4&&(j==1||j==4))||(i==5&&(j==2||j==3)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+       } 
+       System.out.println();
+      
+     }
+    }  
+  }   
+*****************************************************
+Q20.WAP to print small t???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if(i==3||j==3||(i==5&&j==4))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+**********************************************************
+Q21.WAP to print small v???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+       
+      
+        for(int j =1; j<=6; j++){
+          if(((i>1&&i<6)&&(j==1||j==4))||(i==6&&(j==2||j==3))||(i==6&&(j==4||j==2))||(j==4&&(i==6||i==7)))
+           System.out.print("*");
+          else
+           System.out.print("  ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+********************************************************
+Q22.WAP to print v small????
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+       
+      
+        for(int j =1; j<=9; j++){
+          if(i==j||j==(10-i))
+           System.out.print("*");
+          else
+           System.out.print("  ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+**********************************************************
+Q23.WAP to print small w???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=7; i++)
+      {
+       
+      
+        for(int j =1; j<=7; j++){
+          if(j==1||j==7||(i==6&&(j==2||j==6))||(i==4&&j==4)||(i==5&&(j==3||j==5)))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+************************************************************
+Q24.WAP to print small x???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+       
+      
+        for(int j =1; j<=5; j++){
+          if(i==j||j==(6-i))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }     
+*********************************************************
+Q25.WAP to print small y???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=3; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if(i==j||j==(6-i))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+       for(int i=1; i<=2; i++){
+         for(int k=1; k<=2; k++)
+          System.out.print(" ");
+         for(int j=1; j<=1; j++)
+          System.out.print("*"); 
+         System.out.println();
+       
+       }
+     }
+    }     
+***********************************************
+Q26. WAP to print small z???
+class loop{
+      public static void main(String args[]){
+      for(int i=1; i<=5; i++)
+      {
+        for(int j =1; j<=5; j++){
+          if(i==1||i==5||j==(5-i))
+           System.out.print("*");
+          else
+           System.out.print(" ");
+        }
+       System.out.println();
+      }
+     }
+    }  
